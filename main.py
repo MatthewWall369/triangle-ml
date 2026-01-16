@@ -50,7 +50,7 @@ def load_sample_datasets():
         "Iris": load_iris(),
         "Breast Cancer": load_breast_cancer(),
         "Synthetic Binary": make_classification(n_samples=1000, n_features=20, n_classes=2, random_state=42),
-        "Synthetic Multi-class": make_classification(n_samples=1000, n_features=20, n_classes=3, random_state=42)
+        "Synthetic Multi-class": make_classification(n_samples=1000, n_features=20, n_classes=3, n_informative=3, n_redundant=2, random_state=42)
     }
     return datasets
 
